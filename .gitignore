@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Model files (optional, if too large for GitHub)
+*.h5
+*.pkl
+
+# VSCode / PyCharm
+.vscode/
+.idea/

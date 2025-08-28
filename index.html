@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Post Fraud Detector</title>
+</head>
+<body>
+    <h2>Check Job Post</h2>
+    <textarea id="desc" rows="5" cols="50" placeholder="Paste job description here..."></textarea><br><br>
+    <button onclick="checkJob()">Check</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        async function checkJob() {
+            const text = document.getElementById("desc").value;
+
+            const response = await fetch("http://127.0.0.1:8000/", {   // 👈 backend URL
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: text })
+            });
+
+            const data = await response.json();
+            document.getElementById("result").innerText =
+                `Prediction: ${data.prediction} (Probability: ${data.probability.toFixed(2)})`;
+        }
+    </script>
+</body>
+</html>
