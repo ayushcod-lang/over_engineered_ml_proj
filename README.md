@@ -1,4 +1,4 @@
-# 🧠 Fake Job Post Prediction
+#  Fake Job Post Prediction
 
 This project predicts whether a job posting is **real or fake** using both **Machine Learning (ML)** and **Deep Learning (DL)** models. It applies **NLP preprocessing**, trains multiple models, and deploys the final system with **FastAPI (backend)** and a **basic HTML frontend**.  
 
@@ -7,7 +7,7 @@ This project predicts whether a job posting is **real or fake** using both **Mac
 
 ---
 
-## 🚀 Features  
+## Features  
 
 - Preprocessed text (lowercasing, punctuation removal, stopwords removal, tokenization).  
 - ML models trained (Logistic Regression, Random Forest, SVM).  
@@ -19,9 +19,9 @@ This project predicts whether a job posting is **real or fake** using both **Mac
 
 ---
 
-## 📊 Results  
+##  Results  
 
-### 🔹 Machine Learning (Logistic Regression)  
+###  Machine Learning (Logistic Regression)  
 
 - Accuracy: **97%**  
 - High precision but lower recall on **fake job class** (misses some fraudulent jobs).
@@ -31,13 +31,13 @@ This project predicts whether a job posting is **real or fake** using both **Mac
 <img width="662" height="267" alt="Screenshot 2025-08-29 014525" src="https://github.com/user-attachments/assets/3c38a050-f67c-4aec-a759-ba156ac8adde" />
 
 
-👉 This shows the **classification report** of Logistic Regression.  
+ This shows the **classification report** of Logistic Regression.  
 - The model is **excellent at predicting real jobs**.  
 - But it sometimes misses **fake jobs**, meaning it’s conservative.  
 
 ---
 
-### 🔹 Deep Learning Model  
+###  Deep Learning Model  
 
 - Accuracy: **98%**  
 - Better **recall** on fake jobs compared to ML.  
@@ -47,26 +47,26 @@ This project predicts whether a job posting is **real or fake** using both **Mac
 <img width="623" height="227" alt="Screenshot 2025-08-29 015100" src="https://github.com/user-attachments/assets/c39a07ad-981e-406e-ac87-0e2688290c8b" />
  
 
-👉 This shows the **classification report** for the Deep Learning model.  
+ This shows the **classification report** for the Deep Learning model.  
 - Both **precision & recall are well-balanced**.  
 - Performs better on **fraudulent class** than Logistic Regression.  
 
-📌## Training Accuracy over every Epoch ## 
+## Training Accuracy over every Epoch ## 
 <img width="1077" height="457" alt="image" src="https://github.com/user-attachments/assets/d104ba44-4c0c-4c43-ba61-1260bcb78d10" />
  
 
-👉 This plot shows the **training & validation accuracy over epochs**.  
+ This plot shows the **training & validation accuracy over epochs**.  
 - Accuracy improves steadily and converges without overfitting.  
 
 ---
 
-### 🔹 Word Importance  
+###  Word Importance  
 
 ## Words that influences the most in both positive and negative way ##
 <img width="741" height="635" alt="Screenshot 2025-08-29 014933" src="https://github.com/user-attachments/assets/c8036e88-f4e9-40b3-9b2d-7e5d6da20909" />
 
 
-👉 This highlights the most **important words**:  
+ This highlights the most **important words**:  
 - Fake job indicators: *money, entry-level, clerk, earn, immediate*.  
 - Real job indicators: *team, project, developer, client, experience*.  
 
@@ -74,7 +74,7 @@ This helps explain **why the model makes predictions**.
 
 ---
 
-## 🔀 ML vs DL Comparison  
+##  ML vs DL Comparison  
 
 | Aspect              | Machine Learning (LogReg) | Deep Learning (LSTM) |
 |---------------------|---------------------------|-----------------------|
@@ -84,16 +84,16 @@ This helps explain **why the model makes predictions**.
 | Training Time       | Fast (seconds)           | Slower (minutes)     |
 | Interpretability    | Easy (coefficients)      | Harder (black box)   |
 
-✅ **Takeaway**:  
+ **Takeaway**:  
 - Logistic Regression is simpler & interpretable, good for a baseline.  
 - Deep Learning generalizes better for fraud detection.  
 
 ---
 
-## ⚙️ Tech Stack  
+## ⚙ Tech Stack  
 ---
 
-## 📚 Libraries Used  
+##  Libraries Used  
 
 - **NumPy** → For numerical computations and array handling.  
 - **Pandas** → For dataset loading, cleaning, and manipulation.  
